@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript challenge</title>
+</head>
+<body>
+    <h1>Creating new element using Javascript</h1>
+    <div>
+        <p>the first paragraph. one more to come.</p>
+    </div>
+    <button>add a paragraph</button>
+</body>
+<script>
+    var divtag = document.querySelector('div');
+    var btn = document.querySelector('button');
+    btn.addEventListener('click', function(){
+        var newP = document.createElement('p');
+        var pText = document.createTextNode('The new para i talked about');
+        newP.appendChild(pText);
+        divtag.appendChild(newP);
+    });
+    // console.log(newP);
+    // console.log(pText);
+</script>
+</html>
