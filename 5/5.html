@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Challenge</title>
+    <!-- <script src="C:\Users\Lenovo\Desktop\Coding\Javascript\Practice\Exercises\6\6.js"></script> -->
+</head>
+
+<body>
+    <h1>Challenge on capturing events.</h1>
+    <p>This is a lame paragraph</p>
+    <p>Another paragraph that will turn green</p>
+    <p>another one hehe</p>
+    <button>Change the color to Green!!!</button>
+</body>
+<script>
+    var para_tag = document.querySelector('p');
+    console.log(para_tag);
+    var btn = document.querySelector('button');
+    console.log(btn);
+    btn.addEventListener('click', function () {
+        para_tag.style.color = 'green';
+    });
+</script>
+
+</html>
