@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript challenge</title>
+</head>
+<body>
+    <h1>Challenge to provide buttons that add and remove paragraphs</h1>
+    <p>First para TP</p>
+    <div>
+        
+    </div>
+    <button>Add paragraph</button>
+    <button>Remove paragraph</button>
+</body>
+<script>
+    var divTag = document.querySelector('div');
+    var btnAdd = document.querySelectorAll('button')[0];
+    var btnRem = document.querySelectorAll('button')[1];
+    var numPs = 1;
+    btnAdd.addEventListener('click', function(){
+        numPs++;
+        console.log(numPs)
+        var newP = document.createElement('p');
+        var newText = document.createTextNode(`this is paragraph number ${numPs}`);
+        newP.appendChild(newText);
+        divTag.appendChild(newP);
+    });
+    btnRem.addEventListener('click', function(){
+        if(numPs>1){
+            divTag.removeChild(divTag.children[numPs-1]);
+            numPs--;
+        }else{
+            alert("dont do that!!!");
+        }
+    });
+</script>
+</html>
