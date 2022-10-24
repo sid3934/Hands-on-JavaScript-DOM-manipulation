@@ -9,4 +9,3 @@ Exercise 5: Changing Font color <br>
 Exercise 6: Adding new elements in the HTML using JS. <br>
 Exercise 7: Adding and removing elements in HTML using JS. <br>
 Exercise 8: A basic slideshow on the window using JS. <br>
-Exercise 9: Cross face slideshow effect using Js. <br>
