@@ -1,6 +1,6 @@
 (function(){
     "use strict"
-    var imgFolder = ["images/image1.jpg", "images/image2.jpg", "images/image3.jpg", "images/image4.jpg", "images/image5.jpg"];
+    var imgFolder = ["image1.jpg", "image2.jpg", "image3.jpg", "image4.jpg", "image5.jpg"];
         var imgNo = 0;
         document.getElementById('next').onclick = nextPhoto;
         function nextPhoto(){
